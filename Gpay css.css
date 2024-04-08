@@ -1,0 +1,198 @@
+html {
+    min-height: 1000px;
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    order: 2;
+    justify-content: left;
+  }
+  
+  .result-container {
+    display: flex;
+    flex-wrap: wrap;
+    order: 2;
+    justify-content: left;
+      height: auto;
+      margin-top: 200px;
+  }
+  
+  #result {
+      flex: 0 100%;
+    margin-top: 1rem;
+    background-color: #3a4453;
+    color: #fff;
+    font-size: 12px;
+  }
+  
+  .inputFields {
+    margin-left: 40px;
+  }
+  .item {
+    /* flex: 0 48%; */
+    height: 100%;
+    margin-bottom: 2%; /* (100-32*3)/2 */
+    padding-right: 15px;
+  }
+  .item100 {
+    flex: 0 100%;
+    height: 50px;
+    margin-top: 0%;
+    margin-bottom: 2%; /* (100-32*3)/2 */
+    justify-content: center;
+  
+  }
+  
+  .toggle-content, .is-hide {
+      display: none;
+  }
+  
+  .toggle-content.is-visible {
+      display: block;
+  }
+  
+  .webSDK-placeholder {
+    height: 20rem;
+  }
+  
+   input {
+       background: #ffffff;
+       border-radius: 3px;
+       border: 1px solid #D3DCE6;
+       color: #4A5568;
+       display: block;
+       outline: none;
+       padding: 5px 12px;
+       width: 360px;
+       font-family: Nunito Sans, sans-serif;
+     font-size: 14px;
+  }
+   input:placeholder-shown {
+       border: 1px solid #D3DCE6;
+  }
+   input:hover {
+       border: 1px solid #95AAC1;
+  }
+   input:focus {
+       border: 1px solid #493DAA;
+  }
+   #card-field-placeholder, #card-number, #card-expiry, #card-cvc {
+       background: #ffffff;
+       border-radius: 3px;
+       border: 1px solid #d3dce6;
+       color: #4a5568;
+       display: block;
+       margin-top: 5px;
+       outline: none;
+       padding: 7px 12px;
+       width: 360px;
+  }
+   #card_number_three_fields {
+       margin-top: 5px;
+       padding: 7px 12px;
+       width: 470px;
+  }
+  
+   .init-button, .pay-button {
+       background-color: #493DAA;
+       border-radius: 3px;
+       border: 1px solid #382F7E;
+       color: #fff;
+       font-size: 14px;
+       font-weight: 400;
+       height: 36px;
+       line-height: 20px;
+       margin-top: 16px;
+       margin-bottom: 10px;
+       width: 140px;
+  }
+  .init-button:hover, .pay-button:hover {
+    color: #fff;
+    background-color: #382F7E;
+      border: 1px solid #493DAA;
+      cursor: pointer;
+  }
+  #sightline-placeholder {
+      height: auto;
+  }
+   .validation-error {
+       color: #E30045;
+       font-size: 12px;
+       height: 16px;
+       line-height: 16px;
+       visibility: hidden;
+  }
+  
+   label {
+       color: #4a5568;
+       font-size: 14px;
+       font-weight: 600;
+  }
+   #card_number {
+       width: 700px;
+  }
+   #cardholder_name {
+       width: 470px;
+  }
+  
+   #card-field-placeholder.sfc-focus, #card-number.focused, #card-expiry.focused, #card-cvc.focused  {
+       border: 1px solid #493DAA;
+  }
+  
+   #card-field-placeholder.sfc-focus, #card-number:hover, #card-expiry:hover, #card-cvc:hover {
+       border: 1px solid #95aac1;
+  }
+   
+  button, input, optgroup, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+  }
+  
+  body {
+    font-family: Nunito Sans, Roboto,sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #4a5568;
+    line-height: 1.8;
+  }
+  
+  #apms label {
+      display: flex;
+      align-items: baseline;
+      flex-direction: row;
+  }
+  
+  #apms label input {
+    width: 50px;
+  }
+   .sfcModal-header {
+       height: 1.5rem;
+  }
+   .sfcModal-dialog {
+       margin: 55px auto;
+       max-width: 492px;
+       position: relative;
+       width: auto;
+  }
+   .sfcModal-content {
+       background-clip: padding-box;
+       background-color: #ffffff;
+       border: 1px solid #dfdfdf;
+       outline: 0;
+       position: relative;
+  }
+  .sfcModal-close {
+        border: 0;
+        color: #2c2a2a;
+        cursor: pointer;
+        font-size: .9rem;
+        padding: 0;
+        position: absolute;
+        right: 0.5rem;
+        top: 0.4rem;
+   }
+   .sfcIcon--close:before {
+        content: "\2716";
+   }

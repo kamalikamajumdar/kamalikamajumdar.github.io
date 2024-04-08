@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html></html>
+<head>
+    <title>Test</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="https://cdn.safecharge.com/safecharge_resources/v1/websdk/safecharge.js"></script>
+
+  </head>
+
+  <body>
+  
+      <div class='container'>
+        <div class="item">      
+          <label for="session">sessionToken</label>
+          <input type="text" placeholder="sessionToken" id="session" name="session" /> 
+        </div>
+        <div class="item">   
+          <label for="metchantID">merchantId</label>
+          <input value="" type="text" placeholder="merchantId" id="metchantID" /> 
+        </div>
+        <div class="item">   
+          <label for="metchantSiteID">merchantSiteId</label>
+          <input value="" type="text" placeholder="merchantSiteId"  id="metchantSiteID"/> 
+        </div>
+       
+        <div class="item100">
+           <button class='pay-button' onclick="initSDK()">Initialize webSDK</button>
+        </div>
+        
+        <div class="webSDK-placeholder"></div>
+
+                  <div class="webSDK-container toggle-content item100">
+                  <div id="googlePayContainer"></div>
+          </div>
+              </div>
+    <script async src="https://pay.google.com/gp/p/js/pay.js"></script>
+              <div class='result-container'>
+             <pre id='result'></pre>
+         </div>
+  </body>
+  </html>    
